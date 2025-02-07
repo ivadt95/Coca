@@ -1,2 +1,6 @@
 # Coca
-practic only html css
+
+Сайт для практики HTML и CSS
+
+[Источник](https://verstaem.online/projects/coca/)
+
