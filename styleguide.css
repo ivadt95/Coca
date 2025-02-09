@@ -1,7 +1,31 @@
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/static/Inter_28pt-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/static/Inter_28pt-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  /* semibold */
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/static/Inter_28pt-Medium.ttf") format("truetype");
+  font-weight: 500;
+  /* medium */
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/static/Inter_28pt-Regular.ttf") format("truetype");
+  font-weight: normal;
+  /* regular */
+}
+
 * {
   padding: 0;
   margin: 0;
-  font-family: "Inter";
+  font-family: "Inter" sans-serif;
 }
 *,
 *::before,
@@ -9,27 +33,17 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
-  font-weight: 100 900; /* Поддерживает весь диапазон */
-}
+
 
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  background-color: lightyellow;
+  /* background-color: lightyellow; */
+  font-family: "Inter";
 }
 
-h1,
-h2,
-h4,
-h5,
-h6 {
-  font-weight: bold;
-}
 
 .container {
   display: flex;
@@ -48,25 +62,53 @@ h6 {
 .container-fonts-item {
   width: 263.33px;
   height: 113.6px;
-  background-color: #fafafa;
+  background-color: #FAFAFA;
   border-radius: 8.04px;
 
   margin-right: 114px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+
 
   padding: 20px 91px 21px 20px;
 }
 .container-fonts-item-left {
   padding: 8px;
-  background-color: lightcoral;
+  background-color: rgb(255, 255, 255);
   border-radius: 8px;
 }
-.container-fonts-item-left-text {
+.text-example {
   font-size: 48px;
-  line-height: 56px;
+  line-height: 56px;  
   letter-spacing: 0;
+}
+.text-example-header {
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+.text-example-description {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+  color:#A6A6A6;
+}
+
+.container-fonts-item-right {
+}
+.shadow {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.text-bold {
   font-weight: bold;
 }
-.container-fonts-item-right {
+.text-semibold {
+  font-weight: 600;
+}
+.text-medium {
+  font-weight: 500;
+}
+.text-regular {
+  font-weight: normal;
 }
