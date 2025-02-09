@@ -8,11 +8,11 @@
 *::after {
   box-sizing: border-box;
 }
-/* TODO - подключить шрифты */
+
 @font-face {
   font-family: "Inter";
-  src: url("fonts/Inter/Inter-VariableFont_opsz\,wght.ttf") format(".ttf"),
-    url("fonts/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf") format(".ttf");
+  src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 100 900; /* Поддерживает весь диапазон */
 }
 
 body {
