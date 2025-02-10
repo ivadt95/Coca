@@ -44,12 +44,45 @@ body {
   font-family: "Inter";
 }
 
+.header {
+  background-color: #161616;
+  border-radius: 26px;
+  padding: 72px 92px;
+  width: 1524px;
+  height: 212px;
+}
+.header-text {
+  font-size: 56px;
+  color: #ffffff;
+}
+.title {
+  margin-top: 55px;
+  width: 451px;
+  height: 48px;
+}
+.title-text {
+  font-size: 40px;
+  color: #101010;
+}
+.description {
+  margin-top: 28px;
+  width: 651.43px;
+  height: 64px;
+}
+.description-text {
+  font-weight: normal;
+  text-align: start;
+  font-size: 24px;
+  color: #878787;
+}
+.content {
+  margin: 0 80px;
+}
 
 .container {
   display: flex;
   flex-direction: column;
 }
-
 .container-fonts {
   height: 113.6px;
   width: 1396px;
@@ -112,3 +145,4 @@ body {
 .text-regular {
   font-weight: normal;
 }
+
