@@ -51,8 +51,8 @@ body {
 }
 
 .container-fonts {
-  height: 113.6;
-  width: 1396;
+  height: 113.6px;
+  width: 1396px;
   margin-top: 56px;
   display: flex;
   flex-direction: row;
