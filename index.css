@@ -160,19 +160,16 @@ h6 {
     position: relative;
     display: inline-block;
     text-decoration: none;
-    color: black;
-    font-size: 24px;
-    font-weight: bold;
   }
   
   .underline-animation::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -3px; /* Расстояние линии от текста */
+    bottom: -6px; /* Расстояние линии от текста */
     width: 0%; /* Начальная ширина линии */
-    height: 2px; /* Толщина линии */
-    background-color: blue; /* Цвет линии */
+    height: 1px;
+    background-color: #000000; /* Цвет линии */
     transition: width 0.3s ease-in-out; /* Анимация */
   }
   
