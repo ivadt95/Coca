@@ -41,59 +41,51 @@ body {
   /* background-color: lightyellow; */
   font-family: "Inter";
 }
-.header {
-    background-color: lightblue;
-    width: 100%;
-    height: 114px;
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
 .flex-row {
-    flex-direction: row;
+  flex-direction: row;
 }
 .flex-justify-content-start {
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 .flex-justify-content-center {
-    justify-content: center;
+  justify-content: center;
+}
+.flex-justify-content-space-between {
+  justify-content: space-between;
+}
+.flex-justify-content-space-around {
+  justify-content: space-around;
 }
 .flex-align-items-center {
-    align-items: center;
+  align-items: center;
 }
 .logo {
-    width: 140px;
-    height: 66px;
+  width: 140px;
+  height: 66px;
 
-    background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
-
-.logo__c{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background-color: black;
-}
-.logo__c-text{
-    color:white;
-    height: 24px;
-    width: 22px;
-}
 .container {
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
   width: 1440px;
   height: 100%;
 }
+.header {
+  /* background-color: lightblue; */
+  width: 100%;
+  height: 114px;
 
-
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 
 .text-bold {
   font-weight: 700;
@@ -151,3 +143,39 @@ h6 {
   font-size: 14px;
   line-height: 120%;
 }
+.nav {
+  width: 276px;
+  height: 66px;
+}
+.mr-32 {
+  margin-right: 32px;
+}
+.mr-68 {
+  margin-right: 68px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.underline-animation {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .underline-animation::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Расстояние линии от текста */
+    width: 0%; /* Начальная ширина линии */
+    height: 2px; /* Толщина линии */
+    background-color: blue; /* Цвет линии */
+    transition: width 0.3s ease-in-out; /* Анимация */
+  }
+  
+  .underline-animation:hover::after {
+    width: 100%; /* При наведении линия заполняет весь текст */
+  }
