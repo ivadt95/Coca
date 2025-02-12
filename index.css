@@ -205,7 +205,16 @@ h6 {
     height: 126px;  
 }
 .intro-right__image{
-    position: relative;
-    top: -21px;
-    left: 38px;
+    margin-top: -21px;
+    margin-left: 37px;
+}
+@media (max-width: 425px){
+
+}
+
+@media (max-width:768px){
+
+}
+@media (max-width 1440px){
+
 }
