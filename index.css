@@ -48,6 +48,12 @@ body {
 .flex-row {
   flex-direction: row;
 }
+.flex-column{
+    flex-direction: column;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
 .flex-justify-content-start {
   justify-content: flex-start;
 }
@@ -72,7 +78,7 @@ body {
 
 .container {
   /* background-color: lightcoral; */
-  width: 1440px;
+  width: 1200px;
   height: 100%;
 }
 .header {
@@ -153,26 +159,53 @@ h6 {
 .mr-68 {
   margin-right: 68px;
 }
+.mt-114 {
+    margin-top: 110px;
+}
 .cursor-pointer {
   cursor: pointer;
 }
+
 .underline-animation {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+.underline-animation::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px; /* Расстояние линии от текста */
+  width: 0%; /* Начальная ширина линии */
+  height: 1px;
+  background-color: #000000; /* Цвет линии */
+  transition: width 0.3s ease-in-out; /* Анимация */
+}
+.underline-animation:hover::after {
+  width: 100%; /* При наведении линия заполняет весь текст */
+}
+
+.intro {
+  height: 785px;
+  width: 100%;
+  padding: 87px 0 135px 0;
+}
+.intro-left__title {
+  font-size: 84px;
+  line-height: 120%;
+  letter-spacing: -3px;
+}
+.line {
+  width: 77px;
+  height: 1px;
+  background-color: black;
+}
+.intro-left__description {
+    width: 514px;
+    height: 126px;  
+}
+.intro-right__image{
     position: relative;
-    display: inline-block;
-    text-decoration: none;
-  }
-  
-  .underline-animation::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px; /* Расстояние линии от текста */
-    width: 0%; /* Начальная ширина линии */
-    height: 1px;
-    background-color: #000000; /* Цвет линии */
-    transition: width 0.3s ease-in-out; /* Анимация */
-  }
-  
-  .underline-animation:hover::after {
-    width: 100%; /* При наведении линия заполняет весь текст */
-  }
+    top: -21px;
+    left: 38px;
+}
