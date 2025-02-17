@@ -1,24 +1,24 @@
 @font-face {
   font-family: "Inter";
-  src: url("/fonts/Inter/static/Inter_28pt-Bold.ttf") format("truetype");
+  src: url("./fonts/Inter/static/Inter_28pt-Bold.ttf") format("truetype");
   font-weight: 700;
   /* bold */
 }
 @font-face {
   font-family: "Inter";
-  src: url("/fonts/Inter/static/Inter_28pt-SemiBold.ttf") format("truetype");
+  src: url("./fonts/Inter/static/Inter_28pt-SemiBold.ttf") format("truetype");
   font-weight: 600;
   /* semibold */
 }
 @font-face {
   font-family: "Inter";
-  src: url("/fonts/Inter/static/Inter_28pt-Medium.ttf") format("truetype");
+  src: url("./fonts/Inter/static/Inter_28pt-Medium.ttf") format("truetype");
   font-weight: 500;
   /* medium */
 }
 @font-face {
   font-family: "Inter";
-  src: url("/fonts/Inter/static/Inter_28pt-Regular.ttf") format("truetype");
+  src: url("./fonts/Inter/static/Inter_28pt-Regular.ttf") format("truetype");
   font-weight: 400;
   /* regular */
 }
@@ -79,8 +79,6 @@ body {
 .logo {
   width: 140px;
   height: 66px;
-
-  background-color: #ffffff;
 }
 
 .container {
@@ -147,7 +145,8 @@ h6 {
 
 .text-body-large {
   font-size: 16px;
-  line-height: 120%;
+  line-height: 26px;
+  letter-spacing: 0;
 }
 .text-body-medium {
   font-size: 14px;
@@ -215,6 +214,9 @@ h6 {
   width: 514px;
   height: 126px;
 }
+.intro-left__description_mobile{
+  display: none;
+}
 .intro-right__image {
   margin-top: -21px;
   margin-left: 37px;
@@ -240,6 +242,13 @@ h6 {
 }
 
 @media (max-width: 425px) {
+  .header {
+    height: 52px;
+  }
+  .logo{
+    width: 112px;
+    height: 52px;
+  }
   .nav {
     display: none;
   }
@@ -247,8 +256,7 @@ h6 {
     display: none;
   }
   .container {
-    max-width: 425px;
-    padding: 20px;
+    max-width: 335px;
   }
 
   .intro-right__image {
@@ -259,15 +267,19 @@ h6 {
     flex-wrap: wrap;
     justify-content: center;
     padding: 0;
+    margin-top:32px
   }
   .intro-right {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  .intro-left{
+    max-width: 335px;
+  }
   .intro-left__title {
     font-size: 32px;
-    line-height: 120%;
+    line-height: 40px;
     letter-spacing: -1px;
     width: 335px;
     height: 80px;
@@ -276,12 +288,16 @@ h6 {
     margin-top: 48px;
   }
   .intro-left__description {
-    width: 335px;
-    height: 100%;
+    display: none;
+  }
+  .intro-left__description_mobile{
+    display: block;
+    width: 303px;
+    height: 96px;
   }
 
   .line {
-    margin: 0;
+    margin-top: 12px;
     width: 24px;
   }
   .sales-img {
@@ -303,6 +319,7 @@ h6 {
 }
 
 @media (min-width: 426px) and (max-width: 1024px) {
+
   .container {
     max-width: 768px;
     padding: 20px;
