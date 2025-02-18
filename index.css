@@ -167,7 +167,7 @@ h6 {
   margin-right: 68px;
 }
 .mt-114 {
-  margin-top: 110px;
+  margin-top: 97px;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -223,24 +223,44 @@ h6 {
 }
 .customer-growth-img {
   z-index: 1;
-  margin-top: 19px;
+  margin-top: 8px;
   margin-left: 437px;
   width: 212px;
   height: 220px;
 }
 .sales-img {
   margin-top: -170px;
-  margin-left: -36px;
+  margin-left: -32px;
   width: 418px;
-  height: 100%;
+  /* height: 100%; */
 }
 .statistic-img {
   margin-top: 29px;
-  margin-left: -38px;
+  margin-left: -31px;
   width: 419px;
-  height: 119px;
+  height: 118px;
 }
 
+.input-email{
+  font-family: "Inter";
+  font-size: 17px;
+  margin-top:81px;
+  width: 280px;
+  height: 41px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #CED1D8;
+  padding-bottom: 25px;
+}
+.input-email:focus{
+  border: none;
+  border-bottom: 1px solid #CED1D8;
+  outline: none;
+}
+.input-email::placeholder{
+  border: none;
+  color:#7E8492;
+}
 @media (max-width: 425px) {
   .header {
     height: 77px;
