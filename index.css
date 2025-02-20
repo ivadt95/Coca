@@ -172,8 +172,8 @@ h6 {
 .mt-114 {
   margin-top: 97px;
 }
-.mt-81{
-  margin-top:81px;
+.mt-81 {
+  margin-top: 81px;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -247,35 +247,35 @@ h6 {
   height: 118px;
 }
 
-.input-email{
+.input-email {
   font-family: "Inter";
   font-size: 17px;
   width: 280px;
   height: 41px;
   border: none;
   outline: none;
-  border-bottom: 1px solid #CED1D8;
+  border-bottom: 1px solid #ced1d8;
   padding-bottom: 25px;
 }
 
-.input-email:focus{
+.input-email:focus {
   border: none;
-  border-bottom: 1px solid #CED1D8;
+  border-bottom: 1px solid #ced1d8;
   outline: none;
 }
-.input-email::placeholder{
+.input-email::placeholder {
   border: none;
-  color:#7E8492;
+  color: #7e8492;
 }
-.buttonEmail{
+.buttonEmail {
   background-color: #000000;
   width: 175px;
   height: 56px;
   padding: 16px 32px;
   border-radius: 25px;
 }
-.buttonEmail_text{
-  color: #FFFFFF;
+.buttonEmail_text {
+  color: #ffffff;
 }
 @media (max-width: 425px) {
   .header {
@@ -296,15 +296,14 @@ h6 {
     max-width: 335px;
   }
 
-  .intro-right__image {
-    margin-top: 350px;
-  }
-
   .intro {
     flex-wrap: wrap;
     justify-content: center;
     padding: 0;
     margin-top: 32px;
+  }
+  .intro-right__image {
+    margin-top: 350px;
   }
   .intro-right {
     display: flex;
@@ -341,7 +340,33 @@ h6 {
     margin-right: 8px;
     width: 24px;
   }
-
+  .inputEmail-sumbitEmail {
+    display: flex;
+  }
+  .mt-81 {
+    margin-top: 40px;
+  }
+  .input-email {
+    width: 219px;
+    height: 36px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0;
+  }
+  .buttonEmail {
+    width: 110px;
+    height: 37px;
+    padding: 8px 16px;
+    border: none;
+  }
+  .buttonEmail_text {
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: 0;
+  }
   .sales-img {
     margin-top: -170px;
     /* margin-left: -36px; */
