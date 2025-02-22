@@ -273,11 +273,132 @@ h6 {
   height: 56px;
   padding: 16px 32px;
   border-radius: 25px;
+  border: none;
 }
 .buttonEmail_text {
   color: #ffffff;
 }
-@media (max-width: 425px) {
+
+
+.circle {
+  background-color: #FA7515;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  filter: blur(303.5px);
+  position: relative;
+  top:-600px
+}
+.shadow {
+  box-shadow: 0px 0px 80px -30px #010100;
+}
+@media (min-width: 0px) and (max-width: 320px) {
+  .header {
+    height: 77px;
+    align-content: flex-end;
+  }
+  .logo {
+    width: 112px;
+    height: 52px;
+  }
+  .nav {
+    display: none;
+  }
+  .contact-us {
+    display: none;
+  }
+  .container {
+    max-width: 90%;
+  }
+
+  .intro {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin-top: 32px;
+  }
+  .intro-right__image {
+    margin-top: 350px;
+  }
+  .intro-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro-left {
+    max-width: 90%;
+  }
+  .intro-left__title {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0;
+    height: 80px;
+  }
+  .mt-114 {
+    margin-top: 48px;
+  }
+  .intro-left__description {
+    display: none;
+  }
+  .intro-left__description_mobile {
+    display: block;
+    width: 90%;
+    height: 96px;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+  .line {
+    margin-top: 10px;
+    margin-right: 8px;
+    width: 24px;
+  }
+  .inputEmail-sumbitEmail {
+    display: flex;
+  }
+
+  .input-email {
+    width: 150px;
+    height: 36px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0;
+  }
+  .buttonEmail {
+    width: 110px;
+    height: 37px;
+    padding: 8px 16px;
+    border: none;
+  }
+  .buttonEmail_text {
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: 0;
+  }
+  .sales-img {
+    margin-top: -139px;
+    margin-left: 0;
+    width: 300px;
+    height: 100%;
+  }
+  .customer-growth-img {
+    width: 118px; 
+    height: 122px;
+    margin-top: 17px; 
+    margin-right: 125px;
+  }
+  .statistic-img {
+    width: 300px;
+    height: 95px;
+    margin-top: 37px;
+    margin-left: 0;
+  }
+}
+
+@media (min-width:321px) and (max-width: 425px) {
   .header {
     height: 77px;
     align-content: flex-end;
@@ -368,20 +489,22 @@ h6 {
     letter-spacing: 0;
   }
   .sales-img {
-    margin-top: -170px;
-    /* margin-left: -36px; */
-    width: 50%;
+    margin-top: -139px;
+    margin-left: 0;
+    width: 335px;
     height: 100%;
   }
   .customer-growth-img {
-    width: 118px;
+    width: 118px; 
     height: 122px;
-    margin-top: 19px;
-    margin-right: 50px;
+    margin-top: 17px; 
+    margin-right: 125px;
   }
   .statistic-img {
-    width: 335px;
+    width: 338px;
     height: 95px;
+    margin-top: 37px;
+    margin-left: 0;
   }
 }
 
