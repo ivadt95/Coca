@@ -323,6 +323,31 @@ h6 {
   margin-top:24px;
 }
 
+.overview_list{
+  width: 100%;
+}
+.overview_list_left{
+  width: 453px;
+}
+.overview_list_title{
+  width: 293px;
+  height: 84px;
+}
+.content_margin{
+  margin-top:24px
+}
+.overview_list_description{
+  width: 100%;
+  height: 84px;
+}
+.overview_list_item_margin {
+  margin-top:56px
+}
+
+.overview_list_right {
+  width: 481px;
+}
+
 @media (min-width: 0px) and (max-width: 320px) {
   .header {
     height: 77px;
