@@ -315,6 +315,9 @@ h6 {
   width: 660px;
   height: 81px;
   text-align: start;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0;
 }
 .overview__title_margin{
   margin-top:100px
@@ -325,6 +328,9 @@ h6 {
 
 .overview_list{
   width: 100%;
+}
+.overview_list_margin{
+  margin-top:80px
 }
 .overview_list_left{
   width: 453px;
