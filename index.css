@@ -148,7 +148,14 @@ h6 {
   letter-spacing: 0;
   line-height: 120%;
 }
+.heading-6{
+  font-family: Inter;
+font-weight: 500;
+font-size: 18px;
+line-height: 32px;
+letter-spacing: 0px;
 
+}
 .text-body-large {
   font-size: 16px;
   line-height: 26px;
@@ -358,6 +365,59 @@ h6 {
   display: none;
 }
 
+.feature > .container{
+
+}
+.feature_image{
+  
+}
+.feature_text{
+  margin-left:58px 
+}
+.feature_title{
+
+}
+.feature_description{
+  margin-top:24px;
+  width:60%;
+  font-family: Inter;
+font-weight: 500;
+font-size: 18px;
+line-height: 32px;
+letter-spacing: 0px;
+
+}
+.feature_list {
+  margin-top:40px;
+  width:60%;
+}
+
+ul {
+  list-style-type: none; /* Убираем стандартные маркеры */
+  padding-left: 0; /* Убираем отступ слева, если нужно */
+}
+.feaute_list__item {
+  display: flex; /* Используем flexbox для выравнивания */
+  align-items: center; /* Вертикальное выравнивание иконки по центру */
+  padding-left: 32px;
+  margin-bottom: 32px;
+  position: relative; /* Для того, чтобы иконка была расположена относительно элемента */
+  height: 64px;
+}
+.feaute_list__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 16px; /* Устанавливаем размер иконки */
+  height: 16px;
+  background-image: url('./static/Intro/done_icon.svg');
+  background-size: contain; /* Сохраняем пропорции */
+  background-repeat: no-repeat;
+}
+
+.feaute_list__item:last-child{
+
+}
 /* @media (min-width: 0px) and (max-width: 320px) {
   .header {
     height: 77px;
