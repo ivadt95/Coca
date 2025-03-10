@@ -317,7 +317,12 @@ letter-spacing: 0px;
 .overview_title {
   width: 816px;
   height: 201px;
-  text-align: start;
+  /* font-family: Inter;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: -2px;
+  vertical-align: middle;   */
 }
 .overview_description {
   width: 660px;
@@ -367,6 +372,9 @@ letter-spacing: 0px;
 
 .feature > .container{
 
+}
+.feature_margin {
+  margin-top: 160px;
 }
 .feature_image{
   
